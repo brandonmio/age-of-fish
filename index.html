@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Age of Fishes: Silurian and Devonian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Before the first forests, the seas filled with fish</h1>
+    <p>From 443 to 359 million years ago, fish went from small, jawless filter feeders to armored giants, early sharks, and the relatives of the first four-legged animals.</p>
+    <svg class="hero-fish" viewBox="0 0 120 50" aria-hidden="true" id="heroFish"></svg>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Scrub through 84 million years</h2>
+    <p class="lede">Drag the slider from the Silurian into the Devonian. Fish that were alive at that moment stay bright; the rest fade out.</p>
+    <div class="scrub">
+      <div class="bands" aria-hidden="true"><div class="b-sil">Silurian</div><div class="b-dev">Devonian</div></div>
+      <label for="time" class="hint" style="margin:0">Time slider</label>
+      <input class="range" id="time" type="range" min="0" max="84" value="0" step="1">
+      <div class="ticks" aria-hidden="true"><span>443 Ma</span><span>419 Ma</span><span>359 Ma</span></div>
+      <div class="readout">
+        <span class="ma" id="ma">443 Ma</span>
+        <span class="era" id="era">Silurian</span>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <p class="hint">Ma means million years ago. Date ranges are approximate and based on the fossil record.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Meet the fish</h2>
+    <p class="lede">Pick a group, then select a card to read more.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filter by fish group"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2>Three changes that mattered</h2>
+    <div class="story">
+      <div><h3>Jaws appear</h3><p>Fish with jaws show up in the later Silurian. Jaws let animals bite, grip, and crush, which opened up whole new ways of feeding.</p></div>
+      <div><h3>Bone and armor</h3><p>Plates of bone covered the heads and bodies of many Devonian fish, from small bottom dwellers to predators like <i>Dunkleosteus</i>.</p></div>
+      <div><h3>Fins become limbs</h3><p>Lobe-finned fish such as <i>Eusthenopteron</i> and <i>Tiktaalik</i> had fins with bones inside, a step toward the legs of land animals.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Draft site about Silurian and Devonian fish. Sizes and dates are approximate and vary between studies.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
